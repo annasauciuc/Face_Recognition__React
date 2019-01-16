@@ -28,15 +28,33 @@ class App extends Component {
   onInputChange = event => {
     console.log("event :", event.target.value);
   };
-  onSubmit = () => {};
+  onButtonSubmit = () => {
+    console.log("click");
+    app.models
+      .predict(
+        "0a1e98a0704e48b1819834889921647e",
+        "https://samples.clarifai.com/face-det.jpg"
+      )
+      .then(
+        function(response) {
+          // do something with response
+        },
+        function(err) {
+          // there was an error
+        }
+      );
+  };
   render() {
     return (
       <div className="App">
         <Particles className="particles" params={particlesOptions} />
         <Navigation />
         <Logo />
-        <Rank />>
-        <ImageLinkForm onInputChange={this.onInputChange} />
+        <Rank />
+        <ImageLinkForm
+          onInputChange={this.onInputChange}
+          onButtonSubmit={this.onButtonSubmit}
+        />
         {}
       </div>
     );
