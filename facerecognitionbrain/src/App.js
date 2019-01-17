@@ -85,8 +85,7 @@ class App extends Component {
           <div>
             <Logo />
             <Rank
-              name={this.state.user.name}
-              entries={this.state.user.entries}
+             
             />
             <ImageLinkForm
               onInputChange={this.onInputChange}
@@ -95,10 +94,10 @@ class App extends Component {
             <FaceRecognition box={box} imageUrl={imageUrl} />
           </div>
         ) : route === "signin" ? (
-          <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
+          <Signin onRouteChange={this.onRouteChange} />
         ) : (
           <Register
-            loadUser={this.loadUser}
+           
             onRouteChange={this.onRouteChange}
           />
         )}
