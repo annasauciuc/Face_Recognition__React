@@ -1,28 +1,25 @@
-import React, { Component } from "react";
-import Particles from "react-particles-js";
-import Navigation from "./components/Navigation/Navigation";
-import Logo from "./components/Logo/Logo";
-import Rank from "./components/Rank/Rank";
-import ImageLinkForm from "./components/ImageLinkForm/ImageLinkForm";
-import FaceRecognition from "./components/FaceRecognition/FaceRecognition";
-import Signin from "./components/Signin/Signin";
-import Register from "./components/Register/Register";
-import Clarifai from "clarifai";
-import "./App.css";
-const app = new Clarifai.App({
-  apiKey: "0a1e98a0704e48b1819834889921647e"
-});
+import React, { Component } from 'react';
+import Particles from 'react-particles-js';
+import FaceRecognition from './components/FaceRecognition/FaceRecognition';
+import Navigation from './components/Navigation/Navigation';
+import Signin from './components/Signin/Signin';
+import Register from './components/Register/Register';
+import Logo from './components/Logo/Logo';
+import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
+import Rank from './components/Rank/Rank';
+import './App.css';
+
 const particlesOptions = {
   particles: {
     number: {
-      value: 40,
+      value: 30,
       density: {
         enable: true,
-        value_area: 400
+        value_area: 800
       }
     }
   }
-};
+}
 
 const initialState = {
   input: '',
