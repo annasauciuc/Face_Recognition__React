@@ -44,9 +44,9 @@ class Signin extends React.Component {
             <fieldset id="sign_up" className="ba b--transparent ph0 mh0">
               <legend className="f1 white fw6 ph0 mh0">Sign In</legend>
               <div className="mt3">
-                <label className=" white fw6 lh-copy f6" htmlFor="email-address">Email</label>
+                <label className="db white fw6 lh-copy f6" htmlFor="email-address">Email</label>
                 <input
-                  className="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                  className="pa2 br2 input-reset ba bg--black-20 hover-bg-black hover-white w-100"
                   type="email"
                   name="email-address"
                   id="email-address"
@@ -54,9 +54,9 @@ class Signin extends React.Component {
                 />
               </div>
               <div className="mv3">
-                <label className="db white fw6 lh-copy f6" htmlFor="password">Password</label>
+                <label className="db br2 white fw6 lh-copy f6" htmlFor="password">Password</label>
                 <input
-                  className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100"
+                  className="b pa2 br2 input-reset ba bg--black-20 hover-bg-black hover-white w-100"
                   type="password"
                   name="password"
                   id="password"
@@ -67,7 +67,7 @@ class Signin extends React.Component {
             <div className="">
               <input
                 onClick={this.onSubmitSignIn}
-                className=" ph3 pv2 input-reset  ba b--grey white bg-black grow pointer f6 dib"
+                className="b ph3 br2 pv2 input-reset uppercase ba bg--black-20 white bg-black grow pointer f6 dib"
                 type="submit"
                 value="Sign in"
               />
